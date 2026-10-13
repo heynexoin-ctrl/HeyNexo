@@ -6,6 +6,8 @@
 <meta name="theme-color" content="#15100d">
 <meta name="color-scheme" content="dark">
 <meta name="description" content="NEXO is launching soon. The professional CRM for freelance photographers and editors in the event industry.">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="canonical" href="https://www.heynexo.in/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="NEXO">
@@ -55,7 +57,9 @@ h1,h2,h4{margin:0}
 
 header{position:relative}
 header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:76px}
-.logo{font-weight:800;font-size:26px;letter-spacing:.05em;text-decoration:none}
+.logo{display:inline-flex;align-items:center;text-decoration:none}
+.logo img{height:34px;width:auto}
+@media (max-width:520px){.logo img{height:28px}}
 .status{display:inline-flex;align-items:center;gap:10px;padding:8px 16px;border:1px solid var(--line-2);border-radius:999px;font-size:12px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--accent-text)}
 .status span{width:8px;height:8px;border-radius:50%;background:var(--accent);animation:pulse 2.4s ease-in-out infinite}
 @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.35;transform:scale(.8)}}
@@ -69,6 +73,10 @@ h1{font-family:var(--display);font-weight:400;font-size:clamp(52px,8vw,108px);li
 h1 em{font-style:italic;color:var(--accent-text)}
 .rule{width:64px;height:2px;background:var(--accent);margin:30px 0 26px;border:0}
 .lede{font-size:clamp(18px,2vw,21px);color:var(--fg-2);max-width:31em}
+.sub{margin-top:30px;display:grid;gap:12px;justify-items:start}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:15px 30px;border-radius:999px;background:var(--accent);color:#1a120d;font-weight:700;font-size:16px;text-decoration:none;transition:transform .2s,filter .2s}
+.btn:hover{filter:brightness(1.08);transform:translateY(-1px)}
+.sub-note{font-size:14px;color:var(--fg-2);max-width:26em}
 .soon{list-style:none;margin:34px 0 0;padding:0;display:grid;gap:16px;max-width:30em}
 .soon li{display:flex;align-items:center;gap:16px}
 .ico{flex:none;width:48px;height:48px;border-radius:50%;background:var(--surface-2);border:1px solid var(--line);display:grid;place-items:center;color:var(--accent-text)}
@@ -98,7 +106,7 @@ footer .wrap{padding-block:22px;display:flex;flex-wrap:wrap;justify-content:spac
   <div class="arcs" aria-hidden="true"><i></i></div>
   <header>
     <div class="wrap">
-      <a class="logo" href="#top" aria-label="NEXO">NEXO</a>
+      <a class="logo" href="#top" aria-label="NEXO"><img src="img/logo.png" width="553" height="120" alt="NEXO"></a>
       <p class="status"><span aria-hidden="true"></span>Launching soon</p>
     </div>
   </header>
@@ -110,6 +118,10 @@ footer .wrap{padding-block:22px;display:flex;flex-wrap:wrap;justify-content:spac
         <h1>Something big is <em>coming.</em></h1>
         <hr class="rule">
         <p class="lede">NEXO is the professional CRM for freelance photographers and editors, built for the event industry. Manage your work, track your earnings and build your network from one app.</p>
+        <div class="sub">
+          <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdEZ-g7dw3KzJ4Ups0SY4TMXtaKIolPvxXe6Ti20VqtTZlr2g/viewform" target="_blank" rel="noopener">Get launch updates</a>
+          <p class="sub-note">Be first to know when NEXO is live. We only use your email for launch news.</p>
+        </div>
         <ul class="soon">
           <li>
             <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M8 3v4M16 3v4M3.5 10h17"/><circle cx="12" cy="15" r="2.2"/></svg></span>
